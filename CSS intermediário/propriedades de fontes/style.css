@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@font-face{
+    font-family: "novaFont";
+    src: url(./fonts/GonspireScript_PERSONAL_USE_ONLY.otf), url(./fonts/GonspireSwash_PERSONAL_USE_ONLY.otf);
+}
+
+h1{
+    font-family: 'Protest Revolution', sans-serif;
+}
+
+p{
+    font-family: "novaFont", sans-serif;
+    font-size: 20px;
+}
+
+a{
+    cursor: pointer;
+}
+
+a:visited{
+    color: green;
+}
+
+a:active{
+    color: purple;
+}
+
+a:hover{
+    background-color: blue;
+    color: black;
+}
+
+/* ESTILIZANDO LISTAS */
+
+ul{
+    list-style-type: square;
+}

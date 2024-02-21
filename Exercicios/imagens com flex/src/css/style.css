@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Public Sans", sans-serif;
+    color: white;
+}
+
+main{
+    width: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+picture{
+    position: relative;
+    height: 432px;
+}
+
+
+.informations{
+    position: absolute;
+    bottom: 43px;
+    left: 26px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 17px;
+    margin-top: 5px;
+}

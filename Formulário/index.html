@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu formulário</h1>
+    
+    <!-- o atributo "method" é responsável por incluir o tipo de ação que haverá no formulário. GET ou POST. -->
+    
+    <!-- GET é utilizado para adicionar o que foi escrito na URL de busca. Geralmente como faz o google e outros sites do tipo. -->
+
+    <!-- POST é utilizado quando quer passar as informações do formulário para um servidor. Geralmente para pegar dados de clientes e etc... -->
+
+    <!-- o atributo "action" é utilizado para anexar o lugar para onde será enviado o formulário. Geralmente é anexado algum servidor backEnd como index.php -->
+    <h3>Formulário com GET</h3>
+    <form method="get" action="index.html">
+        <input type="text" name="q"> 
+        <!-- esse "q" é geralmente de "querry(busca)" usado pelos sites -->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Formulário com POST</h3>
+    <form method="post" action="index.html">
+        <input type="text" name="q"> 
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- o atributo "enctype" é utilizado para permitir que uma imagem seja enviado para o servidor final com o uso do "input = file". E a opção de escolha parai isso é a multipart/form-data -->
+
+    <!-- o atributo para obrigar um campo a ser preenchido é o "required" -->
+
+    <h3>Formulário de Login no Facebook</h3>
+    <form method="get" action="index.html" enctype="multipart/form-data">
+        <input type="text" name="name" id="name" placeholder="Nome" required>
+        <br>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+        <br>
+        <input type="text" name="emailCelular" id="emailCelular" placeholder="E-mail ou Celular">
+        <br>
+        <input type="password" name="password" id="password" placeholder="Senha">
+        <br><br>
+        <label for="dataDeNascimento">Data de Nascimento</label>
+        <select name="dia" id="dia">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        
+        <select name="mes" id="mes">
+            <option value="jan">jan</option>
+            <option value="fev">fev</option>
+            <option value="mar">mar</option>
+            <option value="abr">abr</option>
+            <option value="mai">mai</option>
+        </select>
+        
+        <select name="ano" id="ano">
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+        </select>
+
+        <br>
+        <br>
+        <h3>Gênero</h3>
+
+        <label for="female">Feminino</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="male">Masculino</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="costumised">Personalizado</label>
+        <input type="radio" name="gender" id="costumised" value="costumised">
+
+        <br><br>
+
+        <input type="file" name="" id="">
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

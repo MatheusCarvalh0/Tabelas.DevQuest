@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+}
+
+ul{
+    margin-bottom: 50px;
+}
+
+.emBloco li{
+    background-color: aqua;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+
+.emLinha li{
+    background-color: aqua;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+/* Lembre-se que não é possível estilizar altura e largura para elementos inline. A não ser que esteja em inline-block como abaixo */
+
+.emLinhaBloco li{
+    background-color: aqua;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.esconder li{
+    background-color: aqua;
+    margin-bottom: 10px;
+    display: none;
+}

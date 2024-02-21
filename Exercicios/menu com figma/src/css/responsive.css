@@ -1,0 +1,28 @@
+@media(max-width: 650px){
+    .header{
+        flex-direction: column;
+    }
+
+    .logo h1{
+        font-size: 4rem;
+    }
+
+    .menu{
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .menu li{
+        padding: 4rem;
+    }
+
+    .menu li a{
+        font-size: 4rem;
+        padding: 17px 40px;
+    }
+
+    .menu li a.submit{
+        font-size: 18px;
+        padding: 15px 23px;
+    }
+}
