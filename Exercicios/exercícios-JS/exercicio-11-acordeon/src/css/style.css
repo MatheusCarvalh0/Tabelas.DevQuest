@@ -1,0 +1,91 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    background-color: lightgrey;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acordeon{
+    background-color: white;
+    box-shadow: 0 27px 49px -25px black;
+    display: flex;
+    width: 655px;
+    min-height: 347px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 21px;
+}
+
+.acordeon .ilustracao{
+    position: absolute;
+    left: -90px;
+}
+
+.acordeon .conteudo{
+    width: 90%;
+    padding-left: 200px;
+}
+
+.acordeon .conteudo h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.acordeon .conteudo .pergunta{
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    width: 90%;
+    transition: 0.2s ease;
+}
+
+.acordeon .conteudo .pergunta:hover{
+    color: orangered;
+}
+
+.acordeon .conteudo .itens .item{
+    cursor: pointer;
+    background-image: url(./img/seta\ fechada.png);
+    background-repeat: no-repeat;
+    background-position: right 0 top 8px;
+    background-size: 12px;
+    border-bottom: 1px solid gray;
+    margin: 10px 0;
+
+}
+
+.acordeon .conteudo .itens .item:last-child{
+    border-bottom: none;
+}
+
+.acordeon .conteudo .resposta{
+    display: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*QUANDO O ACORDEON ESTIVER ATIVO*/
+
+.acordeon .itens .itens.ativo h2{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.acordeon .itens .item.ativo .resposta{
+    display: block;
+}
+
+.acordeon .itens .item.ativo{
+    background-image: url(./img/seta\ aberta.png);
+}

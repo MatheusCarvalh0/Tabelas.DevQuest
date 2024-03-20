@@ -1,0 +1,112 @@
+.carrossel{
+   position: relative;
+   display: flex;
+   align-items: center;
+   height: 100vh;
+}
+
+/*Abaixo colocamos opacidade 0 em todos os slides para esconde-los. Adicionamos 100vw e 100h para que a imagem preencha toda a div horizontalmente e posição absolute em relação a div carrossel, para que possamos move-las.*/
+
+.carrossel .slide{
+    opacity: 0;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.carrossel .slide.mostrar{
+    opacity: 1;
+}
+
+/*SETAS*/
+
+.seta-direita, .seta-esquerda{
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-direita{
+    right: 4%;
+}
+
+.seta-esquerda{
+    left: 4%;
+    transform: rotateY(180deg);
+}
+
+.seta-direita .imagem-seta, .seta-esquerda .imagem-seta{
+    width: 50px;
+    height: 50px;
+}
+
+.opacidade{
+    opacity: 0.6;
+    cursor: default;
+}
+
+/*IMAGENS*/
+
+.slide-flores{
+    background-image: url(../img/flowers.png);
+}
+
+.slide-margaridas{
+    background-image: url(../img/margaridas.png);
+}
+
+.slide-montanhas{
+    background-image: url(../img/montanhas.png);
+}
+
+.slide-lago{
+    background-image: url(../img/lago.png);
+}
+
+/*CONTEUDO*/
+
+.conteudo{
+    background-color: white;
+    margin-left: 180px;
+    padding: 65px 60px;
+    width: 520px;
+    border-radius: 10px;
+}
+
+.conteudo h2{
+    margin-bottom: 80px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.conteudo p{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.conteudo a{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.botao-flores{
+    color: palevioletred;
+}
+
+.botao-margaridas{
+    color: yellow;
+}
+
+.botao-montanhas{
+    color: orangered;
+}
+
+.botao-lago{
+    color: lightseagreen;
+}

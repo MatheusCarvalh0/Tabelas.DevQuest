@@ -1,0 +1,16 @@
+.caixa{
+    width: 200px;
+    height: 200px;
+}
+
+.vermelha{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.amarelo{
+    background-color: yellow;
+}
